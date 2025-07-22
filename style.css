@@ -39,3 +39,29 @@ body {
     cursor: pointer;
   }
   
+  .input-box {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+    font-size: 1rem;
+  }
+  
+  .dimension-visualization {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  .dimension-inputs {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+    gap: 6px;
+  }
+  .dimension-box {
+    width: 48px;
+    padding: 2px 4px;
+    font-size: 0.95rem;
+    margin-left: 4px;
+    margin-bottom: 2px;
+  }
