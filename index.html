@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arc Flash Calculator</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="input-panel">
+      <h2>Input Parameters</h2>
+      <label>Working Distance (mm)</label>
+      <input type="number" id="workingDistance" value="455"/>
+
+      <label>Fault Current (kA)</label>
+      <input type="number" id="faultCurrent" value="25"/>
+
+      <label>Arc Duration (s)</label>
+      <input type="number" id="arcDuration" value="0.2"/>
+
+      <button onclick="calculateIncidentEnergy()">Calculate</button>
+    </div>
+
+    <div class="output-panel">
+      <h2>Results</h2>
+      <p>Incident Energy: <span id="incidentEnergy">--</span> cal/cm²</p>
+      <canvas id="safetyChart" width="300" height="300"></canvas>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
